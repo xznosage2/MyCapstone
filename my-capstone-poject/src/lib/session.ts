@@ -35,7 +35,7 @@ export async function createSession(userId: string) {
         'session',
         session,
         {
-            httpOnly: true,
+            httpOnly: false,
             secure: true,
             expires: expiresAt,
             sameSite: 'lax',
